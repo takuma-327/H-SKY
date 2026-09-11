@@ -1,211 +1,37 @@
-/* 基本設定とリセット */
-:root {
-    --primary-color: #d35400; /* 食欲をそそる温かみのあるオレンジ */
-    --text-color: #333333;
-    --bg-light: #f9f9f9;
-    --border-color: #e0e0e0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
-    color: var(--text-color);
-    line-height: 1.6;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* セクション共通 */
-.section {
-    padding: 80px 0;
-}
-.section-title {
-    text-align: center;
-    font-size: 28px;
-    margin-bottom: 40px;
-    position: relative;
-}
-.section-title::after {
-    content: '';
-    display: block;
-    width: 40px;
-    height: 3px;
-    background-color: var(--primary-color);
-    margin: 15px auto 0;
-}
-.bg-light {
-    background-color: var(--bg-light);
-}
-
-/* ヘッダー */
-.header {
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-}
-.header-inner {
+/* 焼肉店リンクボタンのスタイル */
+.shop-links {
+    margin-top: 18px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px 20px;
-}
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--primary-color);
-}
-.global-nav ul {
-    display: flex;
-    list-style: none;
-    align-items: center;
-    gap: 30px;
-}
-.global-nav a {
-    font-weight: bold;
-    transition: color 0.3s;
-}
-.global-nav a:hover {
-    color: var(--primary-color);
-}
-.btn-contact {
-    background-color: var(--primary-color);
-    color: #fff !important;
-    padding: 10px 20px;
-    border-radius: 25px;
-}
-.btn-contact:hover {
-    background-color: #b94a00;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
-/* ヒーローセクション */
-.hero {
-    height: 100vh;
-    min-height: 500px;
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1543339308-43e59d6b73a6?q=80&w=2000&auto=format&fit=crop') center/cover;
-    display: flex;
+.btn-shop {
+    display: inline-flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    color: #ffffff;
-    margin-top: 70px; /* ヘッダーの高さ分下げる */
-}
-.hero-content h2 {
-    font-size: clamp(32px, 5vw, 48px);
-    margin-bottom: 20px;
-    line-height: 1.4;
-}
-.hero-content p {
-    font-size: 18px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
-/* 当社について */
-.section-lead {
-    text-align: center;
-    font-size: 16px;
-    line-height: 2;
-}
-
-/* 事業内容（カード型） */
-.card-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-}
-.card {
-    background: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s;
-}
-.card:hover {
-    transform: translateY(-5px);
-}
-.placeholder-img1 {
-    height: 200px;
-    background: url('https://images.unsplash.com/photo-1577048995772-9694ce025fb9?q=80&w=800&auto=format&fit=crop') center/cover;
-}
-.placeholder-img2 {
-    height: 200px;
-    background: url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=800&auto=format&fit=crop') center/cover;
-}
-.card-body {
-    padding: 20px;
-}
-.card-title {
-    font-size: 20px;
-    margin-bottom: 15px;
-    color: var(--primary-color);
-}
-
-/* お知らせリスト */
-.news-list {
-    list-style: none;
-    max-width: 800px;
-    margin: 0 auto;
-}
-.news-list li {
-    border-bottom: 1px solid var(--border-color);
-    padding: 20px 10px;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-.news-list li:hover {
-    background-color: var(--bg-light);
-}
-.news-list time {
-    color: #666;
-    font-size: 14px;
-    min-width: 90px;
-}
-.category {
-    font-size: 12px;
-    padding: 4px 12px;
-    border-radius: 20px;
-    color: #fff;
-    min-width: 100px;
-    text-align: center;
-}
-.cat-food { background-color: var(--primary-color); }
-.cat-info { background-color: #3498db; }
-
-/* フッター */
-.footer {
+/* 公式サイトボタン（落ち着いたダークトーン） */
+.btn-official {
     background-color: #2c3e50;
-    color: #fff;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 14px;
+    color: #ffffff;
+}
+.btn-official:hover {
+    background-color: #1a252f;
 }
 
-/* レスポンシブ対応 (スマホ用) */
-@media (max-width: 768px) {
-    .global-nav ul {
-        display: none; /* 今回はシンプル化のためスマホでは非表示。後でハンバーガーメニューを追加できます */
-    }
-    .news-list li {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
+/* WEB予約ボタン（目を引くオレンジ・アクセントカラー） */
+.btn-reserve {
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+.btn-reserve:hover {
+    background-color: #b94a00;
 }
