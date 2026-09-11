@@ -1,43 +1,287 @@
-<!-- ヘッダーのnavに「アクセス」を追加 -->
-<nav class="global-nav">
-    <ul>
-        <li><a href="#about">当社について</a></li>
-        <li><a href="#business">事業内容</a></li>
-        <li><a href="#news">お知らせ</a></li>
-        <li><a href="#blog">ブログ</a></li>
-        <li><a href="#recruit">採用情報</a></li>
-        <li><a href="#access">アクセス</a></li> <!-- 追加 -->
-        <li><a href="#contact" class="btn-contact">お問い合わせ</a></li>
-    </ul>
-</nav>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社H&SKY | 大阪の給食受託・飲食事業</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-<!-- （〜中略〜） -->
-
-<!-- アクセス（所在地）セクション -->
-<section id="access" class="section access bg-light">
-    <div class="container">
-        <h2 class="section-title">アクセス</h2>
-        <div class="access-wrapper">
-            <div class="access-info">
-                <h3>所在地</h3>
-                <p>
-                    〒540-0038<br>
-                    大阪府大阪市中央区内淡路町1丁目2-9 中谷ビル 102
-                </p>
-            </div>
-            
-            <!-- レスポンシブ対応のマップコンテナ -->
-            <div class="map-container">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7457672866776!2d135.5115391868355!3d34.68636540311338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72f4e3d926f%3A0xc5483f4725ec4141!2z44CSNTQwLTAwMzgg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65YaF5reh6Lev55S677yR5LiB55uu77yS4oiS77yZIOS4reiwt-ODk-ODqw!5e0!3m2!1sja!2sjp!4v1789130230767!5m2!1sja!2sjp" 
-                    width="600" 
-                    height="450" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="strict-origin-when-cross-origin">
-                </iframe>
-            </div>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-inner">
+            <h1 class="logo"><a href="#">株式会社H&amp;SKY</a></h1>
+            <nav class="global-nav">
+                <ul>
+                    <li><a href="#about">当社について</a></li>
+                    <li><a href="#business">事業内容</a></li>
+                    <li><a href="#news">お知らせ</a></li>
+                    <li><a href="#blog">ブログ</a></li>
+                    <li><a href="#recruit">採用情報</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#contact" class="btn-nav-contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-</section>
+    </header>
+
+    <main>
+        <!-- ヒーローセクション（メインビジュアル） -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>食の喜びを感じていただく<br>お手伝い</h2>
+                <p>高齢者施設への温かいお食事から、街の活気をつくる本格焼肉まで。</p>
+                <div class="hero-actions">
+                    <a href="#business" class="btn-hero">事業内容を見る</a>
+                    <a href="#contact" class="btn-hero-sub">お問い合わせ</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 当社について -->
+        <section id="about" class="section about">
+            <div class="container">
+                <h2 class="section-title">当社について</h2>
+                <div class="about-content">
+                    <p class="section-lead">
+                        美味しい食事を、一人でも多くの方へお届けしたい。<br>
+                        私たちは、徹底した衛生管理と手作りの温もりを大切に、<br class="pc-only">
+                        笑顔と元気を生み出す食の現場を支えています。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 事業内容 -->
+        <section id="business" class="section business bg-light">
+            <div class="container">
+                <h2 class="section-title">事業内容</h2>
+                <div class="card-grid">
+                    <!-- 給食事業 -->
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1577048995772-9694ce025fb9?q=80&w=800&auto=format&fit=crop" alt="給食受託事業の調理風景" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">給食受託事業</h3>
+                            <p class="card-text">
+                                高齢者施設や福祉施設において、栄養バランスと安全性を徹底したお食事を現地調理で提供します。四季折々の旬を取り入れ、食べる楽しみを届けます。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 焼肉店運営（七福） -->
+                    <div class="card">
+                        <div class="card-img-wrap">
+                            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" alt="焼肉七福のお肉" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3 class="card-title">飲食店経営（焼肉 七福）</h3>
+                            <p class="card-text">
+                                厳選した上質なお肉をリーズナブルに味わえる難波の本格焼肉店を運営。活気ある空間と美味しいお肉で特別な時間をご提供します。
+                            </p>
+                            <div class="shop-links">
+                                <a href="https://sichifuku.com/access/" target="_blank" rel="noopener noreferrer" class="btn-shop btn-official">
+                                    店舗公式サイト ↗
+                                </a>
+                                <a href="https://shichifukunamba.owst.jp/" target="_blank" rel="noopener noreferrer" class="btn-shop btn-reserve">
+                                    WEB予約・詳細 ↗
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お知らせ -->
+        <section id="news" class="section news">
+            <div class="container">
+                <h2 class="section-title">お知らせ</h2>
+                <ul class="news-list">
+                    <li>
+                        <time datetime="2026-09-08">2026/09/08</time>
+                        <span class="category cat-info">お知らせ</span>
+                        <a href="#">秋の季節献立の提供を開始いたしました。</a>
+                    </li>
+                    <li>
+                        <time datetime="2026-08-20">2026/08/20</time>
+                        <span class="category cat-info">お知らせ</span>
+                        <a href="#">衛生管理講習会を実施し、現場の安全基準を強化しました。</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- ブログ（本日のお昼ごはん） -->
+        <section id="blog" class="section blog bg-light">
+            <div class="container">
+                <h2 class="section-title">スタッフブログ</h2>
+                <p class="section-lead mb-30">現場で作った本日のお昼ごはんや、季節の献立、調理の工夫をお届けします。</p>
+                
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-thumb-wrap">
+                            <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop" alt="秋鮭の塩焼き定食" loading="lazy">
+                        </div>
+                        <div class="blog-body">
+                            <time datetime="2026-09-11">2026/09/11</time>
+                            <h3>秋鮭の塩焼きと彩り根菜の煮物定食</h3>
+                            <p>本日のメインは脂の乗った秋鮭です。減塩でも物足りなさを感じないよう、出汁を利かせた優しい味付けに仕上げました。</p>
+                        </div>
+                    </article>
+
+                    <article class="blog-card">
+                        <div class="blog-thumb-wrap">
+                            <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?q=80&w=600&auto=format&fit=crop" alt="出来立てカツカレー" loading="lazy">
+                        </div>
+                        <div class="blog-body">
+                            <time datetime="2026-09-04">2026/09/04</time>
+                            <h3>現地調理ならではの出来立てカツカレー</h3>
+                            <p>サクサクの衣と、じっくり時間をかけて煮込んだ特製ルウ。利用者様からも大好評のメニューです。</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 採用情報 -->
+        <section id="recruit" class="section recruit">
+            <div class="container">
+                <h2 class="section-title">採用情報</h2>
+                <p class="section-lead mb-30">調理師・栄養士・調理補助スタッフを募集しています。ブランクのある方も大歓迎です。</p>
+
+                <div class="recruit-box">
+                    <table class="recruit-table">
+                        <tbody>
+                            <tr>
+                                <th>募集職種</th>
+                                <td>調理師 / 栄養士 / 調理補助（正社員・パート・アルバイト）</td>
+                            </tr>
+                            <tr>
+                                <th>業務内容</th>
+                                <td>高齢者施設での仕込み・調理・盛付・配膳チェック・器具洗浄（現地調理）</td>
+                            </tr>
+                            <tr>
+                                <th>応募資格</th>
+                                <td>調理師免許または栄養士資格をお持ちの方優遇。未経験・資格なしの方も歓迎します。</td>
+                            </tr>
+                            <tr>
+                                <th>勤務地</th>
+                                <td>大阪府内の各受託施設（応相談）</td>
+                            </tr>
+                            <tr>
+                                <th>求める人物像</th>
+                                <td>食べる人の喜ぶ顔を大切にできる方、チームワークを尊重して働ける方。</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="recruit-btn-wrap">
+                        <a href="#contact" class="btn-recruit">応募・エントリーはこちら</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- アクセス（Googleマップ埋め込み） -->
+        <section id="access" class="section access bg-light">
+            <div class="container">
+                <h2 class="section-title">アクセス</h2>
+                <div class="access-wrapper">
+                    <div class="access-info">
+                        <h3>株式会社H&amp;SKY 所在地</h3>
+                        <p class="address">
+                            〒540-0038<br>
+                            大阪府大阪市中央区内淡路町1丁目2-9 中谷ビル 102
+                        </p>
+                    </div>
+                    
+                    <div class="map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7457672866776!2d135.5115391868355!3d34.68636540311338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72f4e3d926f%3A0xc5483f4725ec4141!2z44CSNTQwLTAwMzgg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65YaF5reh6Lev55S677yR5LiB55uu77yS4oiS77yZIOS4reiwt-ODk-ODqw!5e0!3m2!1sja!2sjp!4v1789130230767!5m2!1sja!2sjp" 
+                            width="600" 
+                            height="450" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="strict-origin-when-cross-origin">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section id="contact" class="section contact">
+            <div class="container">
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-lead mb-30">
+                    給食委託のご相談、求人への応募、その他ご質問など、お気軽にお問い合わせください。
+                </p>
+
+                <div class="contact-box">
+                    <div class="contact-phone">
+                        <span class="phone-label">お電話でのお問い合わせ</span>
+                        <a href="tel:06-6752-1918" class="phone-number">06-6752-1918</a>
+                        <span class="phone-time">受付時間: 8:00 〜 17:00</span>
+                    </div>
+                    
+                    <hr class="contact-divider">
+
+                    <!-- お問い合わせフォーム -->
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">お名前 <span class="required">必須</span></label>
+                            <input type="text" id="name" name="name" required placeholder="山田 太郎">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス <span class="required">必須</span></label>
+                            <input type="email" id="email" name="email" required placeholder="example@mail.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="category">お問い合わせ種別</label>
+                            <select id="category" name="category">
+                                <option value="給食委託について">給食委託のご相談</option>
+                                <option value="採用について">採用へのご応募・ご質問</option>
+                                <option value="その他">その他</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">お問い合わせ内容 <span class="required">必須</span></label>
+                            <textarea id="message" name="message" rows="5" required placeholder="お問い合わせ内容をご入力ください"></textarea>
+                        </div>
+                        <div class="form-submit">
+                            <button type="submit" class="btn-submit">送信する</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-info">
+                    <h3>株式会社H&amp;SKY</h3>
+                    <p>〒540-0038 大阪府大阪市中央区内淡路町1丁目2-9 中谷ビル 102</p>
+                    <p>TEL: 06-6752-1918</p>
+                </div>
+                <ul class="footer-nav">
+                    <li><a href="#about">当社について</a></li>
+                    <li><a href="#business">事業内容</a></li>
+                    <li><a href="#news">お知らせ</a></li>
+                    <li><a href="#blog">ブログ</a></li>
+                    <li><a href="#recruit">採用情報</a></li>
+                    <li><a href="#access">アクセス</a></li>
+                    <li><a href="#contact">お問い合わせ</a></li>
+                </ul>
+            </div>
+            <p class="copyright">&copy; 2026 株式会社H&amp;SKY All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
