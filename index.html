@@ -1,35 +1,43 @@
-<!-- 事業内容（パン事業を削除し、焼肉店リンクを追加） -->
-        <section id="business" class="section business bg-light">
-            <div class="container">
-                <h2 class="section-title">事業内容</h2>
-                <div class="card-grid">
-                    <!-- 給食事業 -->
-                    <div class="card">
-                        <div class="card-img placeholder-img1"></div>
-                        <div class="card-body">
-                            <h3 class="card-title">給食受託事業</h3>
-                            <p class="card-text">高齢者施設や各種福祉施設向けに、栄養バランスと安全性を徹底したお食事を現地調理で提供しています。</p>
-                        </div>
-                    </div>
+<!-- ヘッダーのnavに「アクセス」を追加 -->
+<nav class="global-nav">
+    <ul>
+        <li><a href="#about">当社について</a></li>
+        <li><a href="#business">事業内容</a></li>
+        <li><a href="#news">お知らせ</a></li>
+        <li><a href="#blog">ブログ</a></li>
+        <li><a href="#recruit">採用情報</a></li>
+        <li><a href="#access">アクセス</a></li> <!-- 追加 -->
+        <li><a href="#contact" class="btn-contact">お問い合わせ</a></li>
+    </ul>
+</nav>
 
-                    <!-- 焼肉事業（七福） -->
-                    <div class="card">
-                        <div class="card-img placeholder-img2"></div>
-                        <div class="card-body">
-                            <h3 class="card-title">飲食店経営（焼肉 七福）</h3>
-                            <p class="card-text">厳選したお肉をリーズナブルに楽しめる本格焼肉店を運営しております。詳細やご予約は下記店舗サイトをご覧ください。</p>
-                            
-                            <!-- 外部リンク用ボタンエリア -->
-                            <div class="shop-links">
-                                <a href="https://sichifuku.com/access/" target="_blank" rel="noopener noreferrer" class="btn-shop btn-official">
-                                    店舗公式サイト ↗
-                                </a>
-                                <a href="https://shichifukunamba.owst.jp/" target="_blank" rel="noopener noreferrer" class="btn-shop btn-reserve">
-                                    WEB予約・詳細 ↗
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- （〜中略〜） -->
+
+<!-- アクセス（所在地）セクション -->
+<section id="access" class="section access bg-light">
+    <div class="container">
+        <h2 class="section-title">アクセス</h2>
+        <div class="access-wrapper">
+            <div class="access-info">
+                <h3>所在地</h3>
+                <p>
+                    〒540-0038<br>
+                    大阪府大阪市中央区内淡路町1丁目2-9 中谷ビル 102
+                </p>
             </div>
-        </section>
+            
+            <!-- レスポンシブ対応のマップコンテナ -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.7457672866776!2d135.5115391868355!3d34.68636540311338!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e72f4e3d926f%3A0xc5483f4725ec4141!2z44CSNTQwLTAwMzgg5aSn6Ziq5bqc5aSn6Ziq5biC5Lit5aSu5Yy65YaF5reh6Lev55S677yR5LiB55uu77yS4oiS77yZIOS4reiwt-ODk-ODqw!5e0!3m2!1sja!2sjp!4v1789130230767!5m2!1sja!2sjp" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="strict-origin-when-cross-origin">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
